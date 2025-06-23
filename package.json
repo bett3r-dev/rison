@@ -1,6 +1,6 @@
 {
   "name": "@bett3r-dev/rison",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "mocha js/rison.spec.js"
   },
@@ -12,6 +12,7 @@
     "url": "https://github.com/Nanonid/rison.git"
   },
   "main": "js/rison.js",
+  "types": "js/rison.d.ts",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
