@@ -113,8 +113,7 @@ rison.quote = function(x) {
         .replace(/%3A/g, ':')
         .replace(/%40/g, '@')
         .replace(/%24/g, '$')
-        .replace(/%2F/g, '/')
-        .replace(/%20/g, '+');
+        .replace(/%2F/g, '/');
 };
 
 

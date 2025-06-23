@@ -3,8 +3,17 @@ var chai = require('chai');
 var expect = chai.expect;
 
 
-
 describe('Rison', function() {
+
+    describe('encode_uri', function() {
+        it('should encode strings with sapces', function() {
+            const original = {any: "json is great", yes:true};
+            const encoded = rison.encode_uri(original);
+            expect(encoded).to.equal(`(any:'json%20is%20great',yes:!t)`);
+            const decodedUri = decodeURIComponent(encoded);
+            expect(rison.decode(decodedUri)).to.deep.equal(original);
+        });
+    });
 
     it('Should do what the README says it does', function() {
 
