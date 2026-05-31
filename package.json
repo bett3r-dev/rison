@@ -12,7 +12,15 @@
     "url": "https://github.com/Nanonid/rison.git"
   },
   "main": "js/rison.js",
+  "module": "js/rison.mjs",
   "types": "js/rison.d.ts",
+  "exports": {
+    ".": {
+      "types": "./js/rison.d.ts",
+      "import": "./js/rison.mjs",
+      "require": "./js/rison.js"
+    }
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
