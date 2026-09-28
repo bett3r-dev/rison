@@ -1,6 +1,6 @@
 {
   "name": "@bett3r-dev/rison",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "test": "mocha js/rison.spec.js"
   },
@@ -25,5 +25,9 @@
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
   },
-  "packageManager": "yarn@4.6.0+sha224.acd0786f07ffc6c933940eb65fc1d627131ddf5455bddcc295dc90fd"
+  "packageManager": "yarn@4.6.0+sha224.acd0786f07ffc6c933940eb65fc1d627131ddf5455bddcc295dc90fd",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
 }
